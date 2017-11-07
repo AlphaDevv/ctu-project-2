@@ -1,0 +1,254 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="author" content="Johnny Aguilera">
+    <meta name="description" content="Page de contact de l´EAD">
+    <title>Contact</title>
+    <link type="text/css" rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <!-- menu de navigation -->
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="./campus.html">Sur le campus</a></li>
+                <li><a href="./ville.html">En ville</a></li>
+                <li><a href="./boutique.html">Boutique</a></li>
+                <li><a href="./contact.html">Nous contacter</a></li>
+            </ul>
+
+        </nav>
+
+        <h1>Nous contacter</h1>
+    </header>
+    
+    <main>
+        <p>
+            Remplissez le formulaire ci-dessous qui nous sera envoyé directement, et sera traité avec le plus grand soin,
+            pour vous apporter une réponse dans les plus brefs delais.
+        </p>
+
+        <form>
+            <section id="coordinates">
+                
+                <header>
+                    <h2>Coordonnées</h2>
+                </header>
+                <fieldset>
+                    <legend>Veuillez remplir les informations ci-dessous pour valider votre correpondance:</legend>
+                    
+                    <div class="form-item">
+                        <label for="txtNom">Nom et Prénom</label>
+                        <input type="text" name="txtNom" id="txtNom" 
+                        size="40" placeholder="Par exemple: Johnny Aguilera" required>    
+                    </div>
+                    
+                    <div class="form-item">   
+                        <label for="txtEmail">Adresse email</label>
+                        <input type="email" name="txtEmail" id="txtEmail" 
+                        size="40" placeholder="Par exemple: test@test.fr" required>
+                    </div>
+                    
+                    <div class="form-item">          
+                        <label for="numEtudiant">Numéro d'étudiant</label>
+                        <input type="text" name="numEtudiant" id="numEtudiant" 
+                        placeholder="Par exemple: 98089089" size="40" required> 
+                    </div>
+                    
+                    <div class="form-item">
+                        <label for="pwCarte">Numéro de carte bancaire</label>
+                        <input type="password" name="pwCarte" id="pwCarte" size="40">    
+                    </div>
+                </fieldset>
+
+            </section>
+
+            <section id="request">
+                
+                <header>
+                    <h2>Votre demande</h2>
+                </header>
+                <fieldset>
+                    <legend>Vous souhaitez nous contacter pour :</legend>
+
+                    <div class="form-item">
+                        <input type="radio" name="radDem" id="radQuestion" value="1" checked>
+                        <label for="radQuestion">poser une question</label>
+
+                        <input type="radio" name="radDem" id="radCommande" value="2">
+                        <label for="radCommande">commander des produits</label>    
+                    </div>
+
+                    <div class="form-item">
+                        <label for="txtQuestion">Tapez le texte de votre question ci-dessous :</label><br>
+                        <textarea id="txtQuestion" name="txtQuestion"></textarea>    
+                    </div>
+                
+                </fieldset>
+
+                <fieldset>
+                    <legend>Remplir les champs ci-dessous pour passer votre commande</legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Libellé de l'article</th>
+                                <th>Prix</th>
+                                <th>Quantité</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" name="txtBoisson" 
+                                    value="Boisson énergisante" disabled>
+                                </td>
+                                <td>
+                                    5 €
+                                </td>
+                                <td>
+                                    <input type="number" name="qtArticle1" value="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="txtLaxatif" 
+                                    value="Laxatif" disabled>
+                                </td>
+                                <td>
+                                    10 €
+                                </td>
+                                <td>
+                                    <input type="number" name="qtArticle2" value="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="txtCorrige" 
+                                    value="Corrigé de l'épreuve de TLS" disabled>
+                                </td>
+                                <td>
+                                    150 €
+                                </td>
+                                <td>
+                                    <input type="number" name="qtArticle3" value="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="txtCinema" 
+                                    value="Place de cinéma" disabled>
+                                </td>
+                                <td>
+                                    5,90 €
+                                </td>
+                                <td>
+                                    <input type="number" name="qtArticle4" value="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="txtFF" 
+                                    value="Menu fast food" disabled>
+                                </td>
+                                <td>
+                                    7,90 €
+                                </td>
+                                <td>
+                                    <input type="number" name="qtArticle5" value="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="txtBanc" 
+                                    value="Banc au parc Micaud" disabled>
+                                </td>
+                                <td>
+                                    34,90 €
+                                </td>
+                                <td>
+                                    <input type="number" name="qtArticle6" value="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="txtCal" 
+                                    value="Calendrier - Les Dieux de l'EAD" disabled>
+                                </td>
+                                <td>
+                                    18,90 €
+                                </td>
+                                <td>
+                                    <input type="number" name="qtArticle7" value="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="txtBPortecle" 
+                                    value="Porte-clé Collabots" disabled>
+                                </td>
+                                <td>
+                                    11,90 €
+                                </td>
+                                <td>
+                                    <input type="number" name="qtArticle8" value="0">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="txtBoisson" 
+                                    value="Photo dédicacée de Fabien" disabled>
+                                </td>
+                                <td>
+                                    6,90 €
+                                </td>
+                                <td>
+                                    <input type="number" name="qtArticle9" value="0">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+
+            </section>
+
+            <section id="validation">
+                
+                <header>
+                    <h2>Validation</h2>
+                </header>
+                <fieldset>
+
+                    <div class="group-item">
+
+                        <input type="checkbox" name="cbCGU" id="cbCGU" required>
+                        <label for="cbCGU">J'ai lu et j'accepte les conditions générales d'utilisation</label>                        
+
+                        <input type="checkbox" name="cbSpam" id="cbSpam" checked>
+                        <label for="cbSpam">J'accepte de recevoir des mails publicitaires</label>
+
+                    </div>
+
+                </fieldset>
+
+            </section>
+        </form>
+    </main>
+            
+    <footer>
+    <ul>
+        <li>&copy; F. Dadeau 2017-2018</li>
+        <li><a href="#">Informations légales</a></li>
+        <li><a href="mailto:webmaster@bons-plans-ead.fr?subject=Je%20veux%20un‰20bon%20plan">Contacter le webmaster</a></li>
+    </ul>    
+    </footer>
+    
+    
+</body>
+
+</html>
